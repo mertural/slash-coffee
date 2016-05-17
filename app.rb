@@ -8,7 +8,7 @@ require './app/commands'
 post '/coffee' do
   content_type :json
 
-  if params['token'] == ENV['SLACK_VERIFICATION_TOKEN']
+  if params['token'] == ENV['xoxb-43626919187-Ky93YnDl1S8BstTqUwok1JyX']
     team_id = params['team_id']
     channel_id = params['channel_id']
     user_id = params['user_id']
